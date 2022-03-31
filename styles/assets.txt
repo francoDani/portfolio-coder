@@ -1,0 +1,10 @@
+  --background-color: #101020;
+  --darkerBg: #151525;
+  --white: #c3c5c2;
+  --allways-white: #c3c5c2;
+  --span-color: #119DA4;
+  --span-off: #055b5f;
+  --neon-color: #c3c5c2;
+  --detail-color: #ff00c8;
+  --font: 'Orbitron', sans-serif;
+  --secondaryFont: 'Ubuntu Mono', monospace;
