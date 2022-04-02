@@ -396,7 +396,6 @@ header {
 .project__section__container:hover img {
   border-radius: 0;
 }
-
 .learn-section {
   min-height: 100vh;
 }
@@ -438,7 +437,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .about {
     grid-template-columns: 50vw 50vw;    
-    grid-template-rows: 94vh;
+    grid-template-rows: 100vh;
     grid-column-gap: 10px;
   }
   .about__info {
@@ -480,7 +479,7 @@ footer {
     display: block;
   }
   .about {
-    height: 0;
+    column-gap: 0;
   }
   .about__img__deco {
     width: 350px;
@@ -507,9 +506,13 @@ footer {
 @media screen and (max-width: 670px) {
   .about {
     display: grid;
+    padding-top: 0 !important;
     grid-template-columns: 90vw;
-    grid-template-rows: 60vh 110vh;
-    justify-content: center;
+    grid-template-rows: 30vh 60vh;
+    justify-content: center;    
+  }
+  .about__img {
+    padding-top: 4em;
   }
   .home__bg {
     background-color: var(--background-color);
@@ -613,12 +616,12 @@ footer {
     display: grid;
     grid-template-rows: 70vh 80vh;
     transform: scale(.7);
-    padding-top: 1em;
+    padding-top: 1rem;
     height: 100vh;
   }  
-  @media screen and (max-height: 600px) {
+  @media screen and (max-height: 670px) {
     .about {
-    grid-template-rows: 90vh 100vh;
+    grid-template-rows: 100vh 100vh;
     }
   }
   .about__img {
