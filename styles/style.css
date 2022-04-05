@@ -913,10 +913,7 @@ footer {
   }
   .about__info p {
     width: 110%;
-  }
-  .learn__section {
-    grid-template-rows: 25vh 35vh 25vh 35vh 25vh 40vh;
-  }
+  }  
   .contact-section {transform: scale(.8);
   }
   .contact__form form {
