@@ -18,15 +18,17 @@
 }
 .home__bg {
   backdrop-filter: blur(4px);
-  min-height: 100vh;
+  max-height: 100vh;
   background-image: url(../images/bgCode1.png);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-auto-rows: 1fr 25fr 1fr;
 }
 header {
-  position: sticky;
   top: 0;
   width: 100vw;
   background-color: var(--darkerBg);
@@ -74,16 +76,12 @@ header {
   color: var(--detail-color);
 }
 .home {
-  display: grid;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
+  align-items: center;
 }
-.home__sign {
-  width: 100%;
-  transform: translateY(-4em);
-  text-align: center;
+.home__sign {  
+  
   -webkit-box-reflect: below 0.5em
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   user-select: none;
@@ -94,6 +92,7 @@ header {
   font-family: var(--font);
   color: var(--white);
   padding-bottom: 0.5em;
+  text-align: center;
 }
 .home__sign h1 span {
   color: var(--span-off);
@@ -142,6 +141,7 @@ header {
   font-family: var(--font);
   color: var(--allways-white);
   font-size: 1.5rem;
+  text-align: center;
 }
 .home__sign ul {
   display: flex;
@@ -584,7 +584,7 @@ header {
 footer {
   font-family: var(--secondaryFont);
   color: var(--detail-color);
-  position: sticky;
+  
   background-color: var(--darkerBg);
   padding: 0.5em;
   bottom: 0;
@@ -737,6 +737,11 @@ footer {
   .desktop__menu {
     display: none;
   }
+  header {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  
   header nav {
     position: absolute;
     width: 100vw;
