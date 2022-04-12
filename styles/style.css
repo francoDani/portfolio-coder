@@ -130,20 +130,12 @@ header {
   min-height: 100vh;
 }
 .learn__bg {
-  backdrop-filter: blur(4px);
-  background-image: url(../images/bgCode4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-  background-attachment: fixed;
+  background-color: var(--background-color);
+  min-height: 100vh;
 }
 .contact__bg {
-  backdrop-filter: blur(4px);
-  background-image: url(../images/bgCode5.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  background-attachment: fixed;
+  background-color: var(--background-color);
+  min-height: 100vh;
 }
 .about {
   height: 100vh;
@@ -265,6 +257,14 @@ header {
 .card {
   margin-top: 1em;
   box-shadow: 10px 0 20px black;
+  min-height: 400px;
+  position: relative;
+}
+.card a {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 .learn__section {
   display: grid;
