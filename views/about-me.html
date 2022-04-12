@@ -10,8 +10,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -21,44 +19,51 @@
 
 <body class="about__bg">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="desktop__menu navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a href="../index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-						</li>
-						<li class="nav-item active">
-							<a href="about-me.html" class="nav-link"><i class="fa fa-exclamation-circle"
-									aria-hidden="true"></i>About Me</a>
-						</li>
-						<li class="nav-item">
-							<a href="projects.html" class="nav-link"><i class="fa fa-cog"
-									aria-hidden="true"></i>Projects</a>
-						</li>
-						<li class="nav-item">
-							<a href="learn-about.html" class="nav-link"><i class="fa fa-desktop"
-									aria-hidden="true"></i>Learn About</a>
-						</li>
-						<li class="nav-item">
-							<a href="contact.html" class="nav-link"><i class="fa fa-envelope-open"
-									aria-hidden="true"></i>Contact Me</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+        <nav>
+            <ul class="desktop__menu">
+                <li>
+                    <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                </li>
+                <li>
+                    <a href="../views/about-me.html" class="active"><i class="fa fa-exclamation-circle"
+                            aria-hidden="true"></i>About Me</a>
+                </li>
+                <li>
+                    <a href="../views/projects.html"><i class="fa fa-cog" aria-hidden="true"></i>Projects</a>
+                </li>
+                <li>
+                    <a href="../views/learn-about.html"><i class="fa fa-desktop" aria-hidden="true"></i>Learn About</a>
+                </li>
+                <li>
+                    <a href="../views/contact.html"><i class="fa fa-envelope-open" aria-hidden="true"></i>Contact Me</a>
+                </li>
+            </ul>
+            <ul class="mobile__menu">
+                <li>
+                    <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="../views/about-me.html" class="active"><i class="fa fa-exclamation-circle"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="../views/projects.html"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="../views/learn-about.html"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="../views/contact.html"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <section class="about container-fluid d-flex align-items-center justify-content-between justify-content-center flex-wrap">
-        <div class="about__img ">
+    <section class="about">
+        <div class="about__img">
             <div class="about__img__deco"></div>
             <img src="../images/profile-photo.png" alt="profile_img">
         </div>
-        <div class="about__info container-fluid d-flex align-items-center justify-content-center flex-column">
+        <div class="about__info">
             <h1>About Me</h1>
             <h4>QA Engineer</h4>
             <p>
@@ -75,7 +80,7 @@
                 I currently work at Sovos Compliance as a QA engineer, learning and gaining experience to grow in the
                 world of technological development
             </p>
-            <ul class="d-flex align-items-center justify-content-center">
+            <ul>
                 <li>
                     <a href="https://github.com/francoDani" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
@@ -91,10 +96,10 @@
                     aria-hidden="true"></i>Download My Resume</a>
         </div>
     </section>
-	<footer class="fixed-bottom navbar-dark bg-dark text-center">
-		<h4 class="h6 text-light d-flex align-items-center justify-content-center">Designed and Developed by Franco Danielsen 2022</h4>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer>
+        <h4>Designed and Developed by Franco Danielsen 2022</h4>
+    </footer>
+    <script src="../scrips/index.js"></script>
 </body>
 
 </html>
