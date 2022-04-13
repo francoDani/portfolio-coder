@@ -10,6 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -19,86 +21,253 @@
 
 <body class="learn__bg">
     <header>
-        <nav>
-            <ul class="desktop__menu">
-                <li>
-                    <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                </li>
-                <li>
-                    <a href="about-me.html"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>About Me</a>
-                </li>
-                <li>
-                    <a href="projects.html"><i class="fa fa-cog" aria-hidden="true"></i>Projects</a>
-                </li>
-                <li>
-                    <a href="learn-about.html" class="active"><i class="fa fa-desktop" aria-hidden="true"></i>Learn
-                        About</a>
-                </li>
-                <li>
-                    <a href="contact.html"><i class="fa fa-envelope-open" aria-hidden="true"></i>Contact Me</a>
-                </li>
-            </ul>
-            <ul class="mobile__menu">
-                <li>
-                    <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="about-me.html"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="projects.html"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="learn-about.html" class="active"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="contact.html"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="desktop__menu navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link"><i class="fa fa-home"
+                                    aria-hidden="true"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about-me.html" class="nav-link"><i class="fa fa-exclamation-circle"
+                                    aria-hidden="true"></i>About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link"><i class="fa fa-cog"
+                                    aria-hidden="true"></i>Projects</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="learn-about.html" class="nav-link"><i class="fa fa-desktop"
+                                    aria-hidden="true"></i>Learn About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"><i class="fa fa-envelope-open"
+                                    aria-hidden="true"></i>Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <section class="learn__section">
-        <div class="learn__section__iframe__container">
-            <iframe src="https://www.youtube.com/embed/W-6OY9eI3hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="learn__section__information">
-            <h2>HTML</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, voluptatem. Amet non in
-                illum itaque at. Ex explicabo illo unde quod quo perferendis, eveniet repellendus! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Voluptates veniam corrupti vitae, recusandae
-                repellendus dolore nemo, doloribus, necessitatibus dolores molestiae quos illo. Beatae
-                laboriosam reprehenderit, illo voluptate accusamus ratione consequuntur. </p>
-            <a href="https://www.youtube.com/watch?v=kN1XP-Bef7w" target="_blank">Learn more about</a>
-        </div>
-        <div class="learn__section__iframe__container">
-            <iframe src="https://www.youtube.com/embed/6vbgZnQrpbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="learn__section__information">
-            <h2>CSS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, voluptatem. Amet non in
-                illum itaque at. Ex explicabo illo unde quod quo perferendis, eveniet repellendus! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Voluptates veniam corrupti vitae, recusandae
-                repellendus dolore nemo, doloribus, necessitatibus dolores molestiae quos illo. Beatae
-                laboriosam reprehenderit, illo voluptate accusamus ratione consequuntur. </p>
-            <a href="https://www.youtube.com/watch?v=OWKXEJN67FE" target="_blank">Learn more about</a>
-        </div>
-        <div class="learn__section__iframe__container">
-            <iframe src="https://www.youtube.com/embed/upDLs1sn7g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="learn__section__information">
-            <h2>JavaScript</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, voluptatem. Amet non in
-                illum itaque at. Ex explicabo illo unde quod quo perferendis, eveniet repellendus! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Voluptates veniam corrupti vitae, recusandae
-                repellendus dolore nemo, doloribus, necessitatibus dolores molestiae quos illo. Beatae
-                laboriosam reprehenderit, illo voluptate accusamus ratione consequuntur. </p>
-            <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E" target="_blank">Learn more about</a>
-        </div>
+        <article class="container html">
+            <div class="content">
+                <div class="learn__section__information">
+                    <h2>HTML</h2>
+                    <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to
+                        be
+                        displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets
+                        (CSS)
+                        and scripting languages such as JavaScript.</p>
+
+                    <p> Web browsers receive HTML documents from a web server or from local storage and render the
+                        documents
+                        into multimedia web pages. HTML describes the structure of a web page semantically and
+                        originally
+                        included cues for the appearance of the document.</p>
+
+                    <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other
+                        objects
+                        such as interactive forms may be embedded into the rendered page. HTML provides a means to
+                        create
+                        structured documents by denoting structural semantics for text such as headings, paragraphs,
+                        lists,
+                        links, quotes and other items. HTML elements are delineated by tags, written using angle
+                        brackets.
+                        Tags such as
+                        < img /> and
+                        < input /> directly introduce content into the page. Other tags such as < p> surround and
+                            provide
+                            information about document text and may include other tags as sub-elements. Browsers do not
+                            display the HTML tags but use them to interpret the content of the page.
+                    </p>
+
+                    <p class="p--hide">HTML can embed programs written in a scripting language such as JavaScript, which affects the
+                        behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The
+                        World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS
+                        standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form
+                        of
+                        HTML, known as HTML5, is used to display video and audio, primarily using the < canvas> element,
+                            in
+                            collaboration with javascript.</p>
+                    <div
+                        class="learn__section__iframe__container  container-fluid d-flex flex-column align-items-center justify-content-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Learn More About
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content bg-dark text-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">HTML</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body  d-flex justify-content-center">
+                                        <iframe src="https://www.youtube.com/embed/W-6OY9eI3hk"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="container css">
+            <div class="content">                
+                <div class="learn__section__information">
+                    <h2>CSS</h2>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
+                        document written in a markup language such as HTML. CSS is a cornerstone technology of the World
+                        Wide Web, alongside HTML and JavaScript.</p>
+
+                    <p> CSS is designed to enable the separation of presentation and content, including layout, colors,
+                        and
+                        fonts. This separation can improve content accessibility; provide more flexibility and control
+                        in
+                        the specification of presentation characteristics; enable multiple web pages to share formatting
+                        by
+                        specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in
+                        the
+                        structural content; and enable the .css file to be cached to improve the page load speed between
+                        the
+                        pages that share the file and its formatting.</p>
+
+                    <p> Separation of formatting and content also makes it feasible to present the same markup page in
+                        different styles for different rendering methods, such as on-screen, in print, by voice (via
+                        speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules
+                        for
+                        alternate formatting if the content is accessed on a mobile device.</p>
+
+                    <p class="p--hide"> The name cascading comes from the specified priority scheme to determine which style rule
+                        applies if
+                        more than one rule matches a particular element. This cascading priority scheme is predictable.
+                    </p>
+
+                    <p class="p--hide"> The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media
+                        type
+                        (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a
+                        free CSS validation service for CSS documents.[5] </p>
+                    <div
+                        class="learn__section__iframe__container  container-fluid d-flex flex-column align-items-center justify-content-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalCss">
+                            Learn More About
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCss" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content bg-dark text-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">CSS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body  d-flex justify-content-center">
+                                        <iframe src="https://www.youtube.com/embed/6vbgZnQrpbU"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <article class="container js">
+            <div class="content">                
+                <div class="learn__section__information">
+                    <h2>JavaScript</h2>
+                    <p>often abbreviated JS, is a programming language that is one of the core technologies of the World
+                        Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web
+                        page behavior, often incorporating third-party libraries. All major web browsers have a
+                        dedicated JavaScript engine to execute the code on users' devices.</p>
+
+                    <p> JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript
+                        standard. It has dynamic typing, prototype-based object-orientation, and first-class functions.
+                        It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It
+                        has application programming interfaces (APIs) for working with text, dates, regular expressions,
+                        standard data structures, and the Document Object Model (DOM).</p>
+
+                    <p> The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or
+                        graphics facilities. In practice, the web browser or other runtime system provides JavaScript
+                        APIs for I/O.</p>
+
+                    <p class="p--hide"> JavaScript engines were originally used only in web browsers, but are now core components of
+                        some servers and a variety of applications. The most popular runtime system for this usage is
+                        Node.js.</p>
+
+                    <p class="p--hide"> Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the
+                        two languages are distinct and differ greatly in design.</p>
+                        <div
+                        class="learn__section__iframe__container  container-fluid d-flex flex-column align-items-center justify-content-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalJs">
+                            Learn More About
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalJs" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content bg-dark text-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">JavaScript</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body  d-flex justify-content-center">
+                                        <iframe src="https://www.youtube.com/embed/upDLs1sn7g4" title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>        
     </section>
-    <footer>
-        <h4>Designed and Developed by Franco Danielsen 2022</h4>
+    <footer class="fixed-bottom navbar-dark bg-dark text-center">
+        <h4 class="h6 text-light d-flex align-items-center justify-content-center">Designed and Developed by Franco
+            Danielsen 2022</h4>
     </footer>
-    <script src="../scrips/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
