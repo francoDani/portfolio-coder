@@ -120,7 +120,7 @@ header {
   transition: 0.2s;
 }
 .home__sign ul li a i:hover {
-  transform: scale(1.1);
+  transform: scale(1.2) rotate(360deg);
   animation: none;
   color: var(--detail-color);
 }
@@ -211,9 +211,9 @@ header {
   transition: 0.2s;
 }
 .about__info ul li a i:hover {
-  transform: scale(1.1);
+  transform: scale(1.2) rotate(360deg);
   animation: none;
-  color: var(--detail-color);
+  color: var(--detail-color);  
 }
 .about__info--book {
   text-decoration: none;
