@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.home__bg {
+  min-height: 100vh;
+  background-image: url(../images/bgCode1.png);
+  backdrop-filter: blur(4px);
+  overflow: hidden; }
+
+body header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #151525;
+  color: #c3c5c2;
+  box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
+  z-index: 10; }
+  body header nav {
+    background-color: #151525; }
+    body header nav div button:focus {
+      outline: none; }
+    body header nav div .active i {
+      color: #119da4; }
+    body header nav div i {
+      margin-right: .3em; }
+
+body .home__sign {
+  min-height: 100vh; }
+  body .home__sign .reflection {
+    -webkit-box-reflect: below 0.5em linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    user-select: none; }
+    body .home__sign .reflection h1 {
+      font-size: 4rem;
+      line-height: 0.7em;
+      font-family: "Orbitron", sans-serif;
+      color: #c3c5c2;
+      padding-bottom: 0.5em; }
+      body .home__sign .reflection h1 span {
+        color: #c3c5c2;
+        text-shadow: 0 0 10px #119da4, 0 0 20px #119da4, 0 0 30px #119da4, 0 0 40px #119da4, 0 0 50px #119da4, 0 0 60px #119da4, 0 0 70px #119da4;
+        animation: glow 5s linear;
+        animation-timing-function: steps(5, end);
+        transition: 3s;
+        cursor: pointer; }
+
+@keyframes glow {
+  0.1%,
+  20.1%,
+  40.1%,
+  50.1%,
+  65.1%,
+  80.1%,
+  81%,
+  90.2% {
+    color: #c3c5c2;
+    text-shadow: 0 0 10px #119da4, 0 0 20px #119da4, 0 0 30px #119da4, 0 0 40px #119da4, 0 0 50px #119da4, 0 0 60px #119da4, 0 0 70px #119da4; }
+  0%,
+  20%,
+  21%,
+  40%,
+  41.4%,
+  50%,
+  65%,
+  80%,
+  90%,
+  100% {
+    color: #055b5f;
+    text-shadow: none; } }
+    body .home__sign .reflection h3 {
+      font-family: "Orbitron", sans-serif;
+      color: #c3c5c2;
+      font-size: 1.5rem; }
+    body .home__sign .reflection ul {
+      margin-top: 1em; }
+      body .home__sign .reflection ul li {
+        list-style: none; }
+        body .home__sign .reflection ul li a {
+          text-decoration: none;
+          color: #c3c5c2; }
+          body .home__sign .reflection ul li a i {
+            font-size: 2.5rem;
+            margin: 0 0.5em 0 0.5em;
+            transition: 0.2s; }
+            body .home__sign .reflection ul li a i:hover {
+              transform: scale(1.2) rotate(360deg);
+              animation: none;
+              color: #ff00c8; }
+
+body footer {
+  font-family: "Ubuntu Mono", monospace;
+  color: #ff00c8;
+  box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
+  user-select: none;
+  padding: .2em; }
