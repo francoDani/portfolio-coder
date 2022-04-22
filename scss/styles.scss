@@ -1,4 +1,9 @@
 @import "variables";
+@import "maps";
+$fonts: (
+    font: "Orbitron",
+    secondaryFont: "Ubuntu Mono"
+);
 
 * {
     margin: 0;
@@ -47,7 +52,7 @@
                 h1 {
                     font-size: 4rem;
                     line-height: 0.7em;
-                    font-family: $font;
+                    font-family: map-get($fonts, font);
                     color: $white;
                     padding-bottom: 0.5em;
                     span {
@@ -92,7 +97,7 @@
                     }
                 }
                 h3 {
-                    font-family: $font;
+                    font-family: map-get($fonts, font);
                     color: $allways-white;
                     font-size: 1.5rem;
                 }
@@ -119,7 +124,7 @@
           }
       }
       footer {
-        font-family: $secondaryFont;
+        font-family: map-get($fonts, secondaryFont);
         color: $detail-color;
         box-shadow: 0 0 20px $span-color, 0 0 40px $span-color,
           0 0 60px $span-color;

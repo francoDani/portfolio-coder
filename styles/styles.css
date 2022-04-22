@@ -1,3 +1,19 @@
+.pepsi {
+  background-color: #2751b8;
+  border: 1px solid #2751b8; }
+
+.resume {
+  background-color: #dfdf00;
+  border: 1px solid #dfdf00; }
+
+.calculator {
+  background-color: #c9002c;
+  border: 1px solid #c9002c; }
+
+.calculator2 {
+  background-color: #525151;
+  border: 1px solid #525151; }
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +50,7 @@ body .home__sign {
     body .home__sign .reflection h1 {
       font-size: 4rem;
       line-height: 0.7em;
-      font-family: "Orbitron", sans-serif;
+      font-family: "Orbitron";
       color: #c3c5c2;
       padding-bottom: 0.5em; }
       body .home__sign .reflection h1 span {
@@ -69,7 +85,7 @@ body .home__sign {
     color: #055b5f;
     text-shadow: none; } }
     body .home__sign .reflection h3 {
-      font-family: "Orbitron", sans-serif;
+      font-family: "Orbitron";
       color: #c3c5c2;
       font-size: 1.5rem; }
     body .home__sign .reflection ul {
@@ -89,7 +105,7 @@ body .home__sign {
               color: #ff00c8; }
 
 body footer {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Ubuntu Mono";
   color: #ff00c8;
   box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
   user-select: none;
