@@ -1,15 +1,12 @@
 @import "variables";
 @import "maps";
-$fonts: (
-    font: "Orbitron",
-    secondaryFont: "Ubuntu Mono"
-);
+@import "mixin";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    }
   .home__bg {
     min-height: 100vh;
     background-image: $bgImagenHome;
@@ -30,12 +27,15 @@ $fonts: (
             background-color: $darkerBg;
             div {
                 button:focus {
-                    outline: none;                    
+                    outline: none;
                 }
                 .active {                    
                     i {
                         color: $span-color;
                     }
+                }
+                a {
+                    transition: .5s;
                 }
                 i {
                     margin-right: .3em;
@@ -123,6 +123,59 @@ $fonts: (
                 }
           }
       }
+      /* using mixin here */
+      .about__info {
+        max-width: 40vw;
+        min-width: 400px;
+        min-height: 100vh;
+        h1 {
+            @include font-property(map-get($fonts, font), 4rem, $allways-white, lighter);
+            line-height: 4rem;
+            text-align: center;
+        }
+      }
+      .learn__bg {
+        background-color: $background-color;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .learn__section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+        .container {
+            position: relative;
+            min-width: 100vw;
+            height: 100%;
+            scroll-snap-align: start;
+        }
+        /* Using @extend */
+        .html {
+            background: $bg1;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        .css {
+            @extend .html;
+            background-image: $bg2;
+        }
+        .js {
+            @extend .html;
+            background-image: $bg3;
+          }
+    }
+      /* projects btn color with each*/
+    @each $project, $color in $projects {
+    .#{$project}{
+        background-color: $color;
+        border: 1px solid $color;
+       }
+    }
       footer {
         font-family: map-get($fonts, secondaryFont);
         color: $detail-color;

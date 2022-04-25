@@ -1,19 +1,3 @@
-.pepsi {
-  background-color: #2751b8;
-  border: 1px solid #2751b8; }
-
-.resume {
-  background-color: #dfdf00;
-  border: 1px solid #dfdf00; }
-
-.calculator {
-  background-color: #c9002c;
-  border: 1px solid #c9002c; }
-
-.calculator2 {
-  background-color: #525151;
-  border: 1px solid #525151; }
-
 * {
   margin: 0;
   padding: 0;
@@ -25,41 +9,45 @@
   backdrop-filter: blur(4px);
   overflow: hidden; }
 
-body header {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  background-color: #151525;
-  color: #c3c5c2;
-  box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
-  z-index: 10; }
-  body header nav {
-    background-color: #151525; }
-    body header nav div button:focus {
-      outline: none; }
-    body header nav div .active i {
-      color: #119da4; }
-    body header nav div i {
-      margin-right: .3em; }
-
-body .home__sign {
-  min-height: 100vh; }
-  body .home__sign .reflection {
-    -webkit-box-reflect: below 0.5em linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-    user-select: none; }
-    body .home__sign .reflection h1 {
-      font-size: 4rem;
-      line-height: 0.7em;
-      font-family: "Orbitron";
-      color: #c3c5c2;
-      padding-bottom: 0.5em; }
-      body .home__sign .reflection h1 span {
+body {
+  /* using mixin here */
+  /* projects btn color with each*/ }
+  body header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #151525;
+    color: #c3c5c2;
+    box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
+    z-index: 10; }
+    body header nav {
+      background-color: #151525; }
+      body header nav div button:focus {
+        outline: none; }
+      body header nav div .active i {
+        color: #119da4; }
+      body header nav div a {
+        transition: .5s; }
+      body header nav div i {
+        margin-right: .3em; }
+  body .home__sign {
+    min-height: 100vh; }
+    body .home__sign .reflection {
+      -webkit-box-reflect: below 0.5em linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+      user-select: none; }
+      body .home__sign .reflection h1 {
+        font-size: 4rem;
+        line-height: 0.7em;
+        font-family: "Orbitron";
         color: #c3c5c2;
-        text-shadow: 0 0 10px #119da4, 0 0 20px #119da4, 0 0 30px #119da4, 0 0 40px #119da4, 0 0 50px #119da4, 0 0 60px #119da4, 0 0 70px #119da4;
-        animation: glow 5s linear;
-        animation-timing-function: steps(5, end);
-        transition: 3s;
-        cursor: pointer; }
+        padding-bottom: 0.5em; }
+        body .home__sign .reflection h1 span {
+          color: #c3c5c2;
+          text-shadow: 0 0 10px #119da4, 0 0 20px #119da4, 0 0 30px #119da4, 0 0 40px #119da4, 0 0 50px #119da4, 0 0 60px #119da4, 0 0 70px #119da4;
+          animation: glow 5s linear;
+          animation-timing-function: steps(5, end);
+          transition: 3s;
+          cursor: pointer; }
 
 @keyframes glow {
   0.1%,
@@ -84,29 +72,78 @@ body .home__sign {
   100% {
     color: #055b5f;
     text-shadow: none; } }
-    body .home__sign .reflection h3 {
+      body .home__sign .reflection h3 {
+        font-family: "Orbitron";
+        color: #c3c5c2;
+        font-size: 1.5rem; }
+      body .home__sign .reflection ul {
+        margin-top: 1em; }
+        body .home__sign .reflection ul li {
+          list-style: none; }
+          body .home__sign .reflection ul li a {
+            text-decoration: none;
+            color: #c3c5c2; }
+            body .home__sign .reflection ul li a i {
+              font-size: 2.5rem;
+              margin: 0 0.5em 0 0.5em;
+              transition: 0.2s; }
+              body .home__sign .reflection ul li a i:hover {
+                transform: scale(1.2) rotate(360deg);
+                animation: none;
+                color: #ff00c8; }
+  body .about__info {
+    max-width: 40vw;
+    min-width: 400px;
+    min-height: 100vh; }
+    body .about__info h1 {
       font-family: "Orbitron";
+      font-size: 4rem;
       color: #c3c5c2;
-      font-size: 1.5rem; }
-    body .home__sign .reflection ul {
-      margin-top: 1em; }
-      body .home__sign .reflection ul li {
-        list-style: none; }
-        body .home__sign .reflection ul li a {
-          text-decoration: none;
-          color: #c3c5c2; }
-          body .home__sign .reflection ul li a i {
-            font-size: 2.5rem;
-            margin: 0 0.5em 0 0.5em;
-            transition: 0.2s; }
-            body .home__sign .reflection ul li a i:hover {
-              transform: scale(1.2) rotate(360deg);
-              animation: none;
-              color: #ff00c8; }
-
-body footer {
-  font-family: "Ubuntu Mono";
-  color: #ff00c8;
-  box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
-  user-select: none;
-  padding: .2em; }
+      font-weight: lighter;
+      line-height: 4rem;
+      text-align: center; }
+  body .learn__bg {
+    background-color: #101020;
+    min-height: 100vh;
+    overflow: hidden; }
+  body .learn__section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    /* Using @extend */ }
+    body .learn__section .container {
+      position: relative;
+      min-width: 100vw;
+      height: 100%;
+      scroll-snap-align: start; }
+    body .learn__section .html, body .learn__section .css, body .learn__section .js {
+      background: url(../images/bg1.png);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      padding: 0; }
+    body .learn__section .css {
+      background-image: url(../images/bg2.png); }
+    body .learn__section .js {
+      background-image: url(../images/bg3.png); }
+  body .pepsi {
+    background-color: #2751b8;
+    border: 1px solid #2751b8; }
+  body .resume {
+    background-color: #dfdf00;
+    border: 1px solid #dfdf00; }
+  body .calculator {
+    background-color: #c9002c;
+    border: 1px solid #c9002c; }
+  body .calculator2 {
+    background-color: #525151;
+    border: 1px solid #525151; }
+  body footer {
+    font-family: "Ubuntu Mono";
+    color: #ff00c8;
+    box-shadow: 0 0 20px #119da4, 0 0 40px #119da4, 0 0 60px #119da4;
+    user-select: none;
+    padding: .2em; }

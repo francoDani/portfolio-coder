@@ -51,19 +51,6 @@
 .about__img:hover div {
   transform: rotate(90deg) translate(15%);
 }
-.about__info {
-  max-width: 40vw;
-  min-width: 400px;
-  min-height: 100vh;
-}
-.about__info h1 {
-  color: var(--allways-white);
-  font-family: var(--font);
-  font-size: 4rem;
-  font-weight: lighter;
-  line-height: 4rem;
-  text-align: center;
-}
 .about__info h4 {
   color: var(--detail-color);
   font-family: var(--secondaryFont);
@@ -107,7 +94,8 @@
   transition: 0.5s;
 }
 .about__info--book:hover {
-  font-weight: bolder;
+  color: var(--detail-color);
+  text-decoration: none;
 }
 .about__info--resume {
   text-decoration: none;
@@ -123,10 +111,12 @@
   transition: 0.5s;
 }
 .about__info--resume:hover {
+  color: var(--allways-white);
   transform: scale(1.1);
   text-shadow: 0 0 10px var(--detail-color), 0 0 15px var(--detail-color),
     0 0 20px var(--detail-color), 0 0 30px var(--detail-color),
     0 0 35px var(--detail-color);
+    text-decoration: none;
 }
 .project__bg {
   background-color: var(--background-color);
@@ -147,49 +137,7 @@
   left: 0;
   bottom: 0;
 }
-
-.learn__bg {
-  background-color: var(--background-color);
-  min-height: 100vh;
-  overflow: hidden;
-}
-.learn__section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-}
-.learn__section .container {
-  position: relative;
-  min-width: 100vw;
-  height: 100%;
-  scroll-snap-align: start;
-}
-.learn__section .html {
-  background: url(../images/bg1.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-}
-.learn__section .css {
-  background: url(../images/bg2.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-}
-.learn__section .js {
-  background: url(../images/bg3.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-}
+/* 
 .learn__section .other {
   background: url(../images/bg4.jpg);
   background-size: cover;
@@ -197,7 +145,7 @@
   background-position: center;
   margin: 0;
   padding: 0;
-}
+} */
 .content {
   position: absolute;
   padding: 8em 2em 0 2em;
@@ -305,6 +253,9 @@
 .contact__form form button:hover {
   cursor: pointer;
   box-shadow: 0 0 20px var(--detail-color);
+}
+.contact__form form button:focus {
+  outline: none;
 }
 .contact__aside {
   display: flex;
