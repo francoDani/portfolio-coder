@@ -122,6 +122,17 @@
   background-color: var(--background-color);
   min-height: 100vh;
 }
+.project__section {
+  position: relative;
+  padding: 0;
+}
+.projects__title {
+  position: absolute;
+  color: white;
+  top: 2em;
+  width: 100%;
+  text-align: center;
+}
 .project__container {
   margin: 3em 0 3em 0;
 }
@@ -181,9 +192,6 @@
   font-family: var(--secondaryFont);
   font-size: 1.3rem;
   margin-top: 1em;
-}
-.projects__section {
-  min-height: 100vh;
 }
 .contact-section {
   width: 100vw;
@@ -448,31 +456,6 @@
     display: flex;
     justify-content: center;
   }
-  .mobile__menu li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 1em;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-family: var(--secondaryFont);
-    position: relative;
-  }
-  .mobile__menu .active {
-    color: var(--span-color);
-  }
-  .mobile__menu .active i {
-    color: var(--detail-color);
-  }
-  .mobile__menu li a {
-    text-decoration: none;
-    color: var(--allways-white);
-    transition: 0.5s;
-  }
-  .mobile__menu li a i {
-    margin-right: 0.3em;
-    transition: 1s;
-    font-size: 1.5rem;
-  }
   .active {
     font-size: 1.7;
   }
@@ -508,18 +491,16 @@
     background-image: none;
     background-color: var(--background-color);
   }
-  .projects__tittle {
-    transform: scale(0.8);
-    padding-bottom: 0;
-  }
   .project__container {
     justify-content: center !important;
+    margin-top: 8em;
   }
   .project__section__container {
     transform: scale(0.9);
   }
   .card {
-    margin-top: 1em;
+    margin: 1em;
+
   }
   .content {
     padding: 4em 0 0 0;
@@ -606,16 +587,7 @@
     max-width: 300px;
   }
 }
-@media screen and (max-height: 600px) {
-  .projects__tittle {
-    transform: scale(0.5);
-    padding-bottom: 0;
-  }
-  .projects__section {
-    transform: scale(0.9);
-    justify-content: center;
-    height: 100vh;
-  }
+@media screen and (max-height: 600px) {  
   .project__section__container {
     margin: 0;
     transform: scale(0.9) translateY(-15vh);
