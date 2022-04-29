@@ -528,7 +528,7 @@ body {
                 button {
                     margin-top: 1em;
                     padding: 0.5em;
-                    font-family: $map($fonts, secondaryFont);
+                    font-family: map-get($fonts, secondaryFont);
                     font-size: 1rem;
                     background-color: transparent;
                     color: $span-color;
