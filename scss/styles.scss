@@ -528,17 +528,17 @@ body {
                 button {
                     margin-top: 1em;
                     padding: 0.5em;
-                    font-family: var(--secondaryFont);
+                    font-family: $map($fonts, secondaryFont);
                     font-size: 1rem;
                     background-color: transparent;
-                    color: var(--span-color);
-                    border: solid 2px var(--detail-color);
+                    color: $span-color;
+                    border: solid 2px $detail-color;
                     border-radius: 25px;
                     min-width: 300px;
                     transition: 0.5s;
                     &:hover {
                         cursor: pointer;
-                        box-shadow: 0 0 20px var(--detail-color);
+                        box-shadow: 0 0 20px $detail-color;
                     }
                     &:focus {
                         outline: none;
@@ -572,7 +572,7 @@ body {
                 min-width: 300px;
                 min-height: 300px;
                 background-color: transparent;
-                border: solid 2px var(--allways-white);
+                border: solid 2px $allways-white;
                 color: white;
                 font-size: 1rem;
                 resize: none;
@@ -687,8 +687,8 @@ body {
     background: #101020;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--span-off);
+    background: $span-off;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--span-color);
+    background: $span-color;
 }
