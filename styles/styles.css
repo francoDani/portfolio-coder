@@ -259,7 +259,7 @@ body {
         font-family: "Ubuntu Mono";
         font-size: 1.8rem;
         text-align: center;
-        margin-top: 2em;
+        margin-top: 1em;
         color: #c3c5c2;
         text-shadow: 0 0 10px #ff00c8, 0 0 15px #ff00c8, 0 0 20px #ff00c8;
         border-radius: 15px;
@@ -310,12 +310,6 @@ body {
   body .project__section {
     position: relative;
     padding: 0; }
-    body .project__section .projects__title {
-      position: absolute;
-      color: white;
-      top: 2em;
-      width: 100%;
-      text-align: center; }
     body .project__section .project__container {
       margin: 3em 0 3em 0; }
       body .project__section .project__container .card {
@@ -323,11 +317,23 @@ body {
         box-shadow: 10px 0 20px black;
         min-height: 400px;
         position: relative; }
+        body .project__section .project__container .card h5 {
+          font-family: "Orbitron"; }
+        body .project__section .project__container .card p {
+          font-family: "Ubuntu Mono";
+          padding-bottom: 1.5em;
+          color: #c3c5c2; }
+          body .project__section .project__container .card p span {
+            font-weight: bolder;
+            color: white; }
         body .project__section .project__container .card a {
           position: absolute;
           width: 100%;
           left: 0;
-          bottom: 0; }
+          bottom: 0;
+          font-family: "Ubuntu Mono";
+          color: white;
+          font-weight: bolder; }
         @media screen and (max-width: 670px) {
           body .project__section .project__container .card {
             transform: scale(0.8); } }
@@ -371,6 +377,8 @@ body {
               text-align: center;
               transform: scale(0.8);
               margin-bottom: 1em; } }
+        body .learn__section .container .content .learn__section__information .p__container {
+          backdrop-filter: blur(12px); }
         body .learn__section .container .content .learn__section__information p {
           font-family: "Ubuntu Mono";
           color: #c3c5c2;
@@ -380,6 +388,9 @@ body {
           text-indent: 20px;
           text-shadow: 0 0 5px black, 0 0 10px black;
           padding: 0 1em 0 1em; }
+          body .learn__section .container .content .learn__section__information p span {
+            font-weight: bolder;
+            color: white; }
           @media screen and (max-width: 1024px) {
             body .learn__section .container .content .learn__section__information p {
               transform: scale(0.8);
@@ -454,17 +465,17 @@ body {
         body .contact-section .contact__form form button {
           margin-top: 1em;
           padding: 0.5em;
-          font-family: var(--secondaryFont);
+          font-family: "Ubuntu Mono";
           font-size: 1rem;
           background-color: transparent;
-          color: var(--span-color);
-          border: solid 2px var(--detail-color);
+          color: #119da4;
+          border: solid 2px #ff00c8;
           border-radius: 25px;
           min-width: 300px;
           transition: 0.5s; }
           body .contact-section .contact__form form button:hover {
             cursor: pointer;
-            box-shadow: 0 0 20px var(--detail-color); }
+            box-shadow: 0 0 20px #ff00c8; }
           body .contact-section .contact__form form button:focus {
             outline: none; }
           @media screen and (max-width: 468px) {
@@ -488,7 +499,7 @@ body {
         min-width: 300px;
         min-height: 300px;
         background-color: transparent;
-        border: solid 2px var(--allways-white);
+        border: solid 2px #c3c5c2;
         color: white;
         font-size: 1rem;
         resize: none; }
@@ -518,6 +529,9 @@ body {
         font-size: 2.4rem;
         text-align: center;
         width: 100%; }
+        @media screen and (max-width: 1024px) {
+          body .contact-section .contact__aside h1 {
+            transform: scale(0.8); } }
       body .contact-section .contact__aside p {
         color: #c3c5c2;
         font-family: "Ubuntu Mono";
@@ -525,6 +539,9 @@ body {
         text-align: center;
         width: 80%;
         margin: 2em; }
+        @media screen and (max-width: 1024px) {
+          body .contact-section .contact__aside p {
+            transform: scale(0.8); } }
       body .contact-section .contact__aside ul {
         list-style: none;
         color: #c3c5c2;
@@ -536,7 +553,8 @@ body {
           margin: 5px; }
           @media screen and (max-width: 1024px) {
             body .contact-section .contact__aside ul li {
-              transform: scale(0.8); } }
+              transform: scale(0.9);
+              font-weight: bold; } }
           body .contact-section .contact__aside ul li a {
             text-decoration: none;
             color: #c3c5c2; }
@@ -587,6 +605,8 @@ body {
     @media screen and (max-width: 670px) {
       body footer {
         display: none; } }
+  body .disclaimer {
+    display: none; }
 
 ::-webkit-scrollbar {
   width: 0.5em; }
@@ -595,20 +615,7 @@ body {
   background: #101020; }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--span-off); }
+  background: #055b5f; }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--span-color); }
-
-/* 
-.disclaimer{display: none;}
-@media screen and (max-height: $mHeight) {
-  .contact__form form textarea {
-    width: 100%;
-    max-width: 200px;
-    min-height: 100px;
-  }
-  .contact__form form button {
-    max-width: 300px;
-  }
-} */
+  background: span-color; }
