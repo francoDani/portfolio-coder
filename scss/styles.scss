@@ -301,7 +301,7 @@ body {
                 font-family: map-get($fonts, secondaryFont);
                 font-size: 1.8rem;
                 text-align: center;
-                margin-top: 2em;
+                margin-top: 1em;
                 color: $allways-white;
                 text-shadow: 0 0 10px $detail-color, 0 0 15px $detail-color, 0 0 20px $detail-color;
                 border-radius: 15px;
@@ -361,13 +361,6 @@ body {
     .project__section {
         position: relative;
         padding: 0;
-        .projects__title {
-            position: absolute;
-            color: white;
-            top: 2em;
-            width: 100%;
-            text-align: center;
-        }
         .project__container {
             margin: 3em 0 3em 0;
             .card {
@@ -375,11 +368,26 @@ body {
                 box-shadow: 10px 0 20px black;
                 min-height: 400px;
                 position: relative;
+                h5 {
+                    font-family: map-get($map: $fonts, $key: font);
+                }
+                p {
+                    font-family: map-get($map: $fonts, $key: secondaryFont);
+                    padding-bottom: 1.5em;
+                    color: $white;
+                    span {
+                        font-weight: bolder;
+                        color: white;
+                    }
+                }
                 a {
                     position: absolute;
                     width: 100%;
                     left: 0;
                     bottom: 0;
+                    font-family: map-get($map: $fonts, $key: secondaryFont);
+                    color: white;
+                    font-weight: bolder;
                 }
                 @media screen and (max-width: $small) {
                     transform: scale(0.8);
@@ -428,6 +436,9 @@ body {
                             margin-bottom: 1em;
                         }
                     }
+                    .p__container {
+                        backdrop-filter: blur(12px);
+                    }
                     p {
                         font-family: map-get($fonts, secondaryFont);
                         color: $white;
@@ -437,6 +448,10 @@ body {
                         text-indent: 20px;
                         text-shadow: 0 0 5px black, 0 0 10px black;
                         padding: 0 1em 0 1em;
+                        span {
+                            font-weight: bolder;
+                            color: white;
+                        }
                         @media screen and (max-width: $large) {
                             transform: scale(0.8);
                             margin: 0;
@@ -604,7 +619,10 @@ body {
                 font-size: 2.4rem;
                 text-align: center;
                 width: 100%;
-            }
+                @media screen and (max-width: $large) {
+                    transform: scale(.8);
+                }
+            }            
             p {
                 color: $white;
                 font-family: map-get($fonts, secondaryFont);
@@ -612,6 +630,9 @@ body {
                 text-align: center;
                 width: 80%;
                 margin: 2em;
+                @media screen and (max-width: $large) {
+                    transform: scale(.8);
+                }
             }
             ul {
                 list-style: none;
@@ -623,7 +644,8 @@ body {
                 li {
                     margin: 5px;
                     @media screen and (max-width: $large) {
-                        transform: scale(0.8);
+                        transform: scale(0.9);
+                        font-weight: bold;
                     }
                     a {
                         text-decoration: none;
