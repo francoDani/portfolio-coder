@@ -695,6 +695,9 @@ body {
                 min-width: 100%;
                 padding: 0;
             }
+            @media screen and (max-height: $mHeight) {
+                top: 90%;
+            }
         }
         @media screen and (max-width: $inter) {
             flex-direction: column;

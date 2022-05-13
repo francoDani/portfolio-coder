@@ -597,6 +597,9 @@ body {
           right: 0;
           min-width: 100%;
           padding: 0; } }
+      @media screen and (max-height: 600px) {
+        body .contact-section .contact__aside {
+          top: 90%; } }
     @media screen and (max-width: 810px) {
       body .contact-section {
         flex-direction: column;
