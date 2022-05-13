@@ -461,7 +461,8 @@ body {
           border: solid 2px #c3c5c2;
           text-align: center;
           font-size: 1rem;
-          color: #c3c5c2; }
+          color: #c3c5c2;
+          transition: .5s; }
           @media screen and (max-width: 468px) {
             body .contact-section .contact__form form input {
               width: 100%;
@@ -509,7 +510,11 @@ body {
         border: solid 2px #c3c5c2;
         color: white;
         font-size: 1rem;
-        resize: none; }
+        resize: none;
+        transition: .5s; }
+        body .contact-section .contact__form textarea:focus {
+          box-shadow: 0 0 20px #c3c5c2;
+          outline: none; }
         @media screen and (max-width: 468px) {
           body .contact-section .contact__form textarea {
             width: 100%;
