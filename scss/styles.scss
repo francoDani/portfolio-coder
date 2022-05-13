@@ -405,6 +405,7 @@ body {
         height: 100vh;
         overflow: auto;
         scroll-snap-type: y mandatory;
+        overflow-x: hidden;
         .container {
             position: relative;
             min-width: 100vw;
@@ -472,6 +473,11 @@ body {
                     .p--hide {
                         @media screen and (max-width: $xSmall) {
                             display: none;
+                        }
+                    }
+                    button {
+                        @media screen and (max-width: $xSmall) {
+                            margin-top: 4em;
                         }
                     }
                 }
@@ -563,6 +569,9 @@ body {
                     }
                 }
                 @media screen and (max-width: $xSmall) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
                     width: 100%;
                 }
                 @media screen and (max-height: $mHeight) {
@@ -620,9 +629,9 @@ body {
                 text-align: center;
                 width: 100%;
                 @media screen and (max-width: $large) {
-                    transform: scale(.8);
+                    transform: scale(0.8);
                 }
-            }            
+            }
             p {
                 color: $white;
                 font-family: map-get($fonts, secondaryFont);
@@ -631,7 +640,11 @@ body {
                 width: 80%;
                 margin: 2em;
                 @media screen and (max-width: $large) {
-                    transform: scale(.8);
+                    transform: scale(0.8);
+                }
+                @media screen and (max-width: $xSmall) {
+                    margin: 0;
+                    width: 100%;
                 }
             }
             ul {
@@ -650,7 +663,11 @@ body {
                     a {
                         text-decoration: none;
                         color: $white;
+                        font-weight: bold;
                     }
+                }
+                @media screen and (max-width: $xSmall) {
+                    transform: scale(.8);
                 }
             }
             @media screen and (max-width: $large) {
@@ -666,6 +683,11 @@ body {
             }
             @media screen and (max-width: $xSmall) {
                 overflow: hidden;
+                position: absolute;
+                top: 65%;
+                right: 0;
+                min-width: 100%;
+                padding: 0;
             }
         }
         @media screen and (max-width: $inter) {

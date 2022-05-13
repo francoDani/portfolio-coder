@@ -347,6 +347,7 @@ body {
     height: 100vh;
     overflow: auto;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
     /* Using @extend */ }
     body .learn__section .container {
       position: relative;
@@ -410,6 +411,9 @@ body {
         @media screen and (max-width: 468px) {
           body .learn__section .container .content .learn__section__information .p--hide {
             display: none; } }
+        @media screen and (max-width: 468px) {
+          body .learn__section .container .content .learn__section__information button {
+            margin-top: 4em; } }
         @media screen and (max-height: 600px) {
           body .learn__section .container .content {
             padding: 0;
@@ -483,6 +487,9 @@ body {
               max-width: 300px; } }
         @media screen and (max-width: 468px) {
           body .contact-section .contact__form form {
+            position: absolute;
+            top: 0;
+            right: 0;
             width: 100%; } }
       body .contact-section .contact__form #form__name {
         border-color: #ff00c8; }
@@ -542,6 +549,10 @@ body {
         @media screen and (max-width: 1024px) {
           body .contact-section .contact__aside p {
             transform: scale(0.8); } }
+        @media screen and (max-width: 468px) {
+          body .contact-section .contact__aside p {
+            margin: 0;
+            width: 100%; } }
       body .contact-section .contact__aside ul {
         list-style: none;
         color: #c3c5c2;
@@ -557,7 +568,11 @@ body {
               font-weight: bold; } }
           body .contact-section .contact__aside ul li a {
             text-decoration: none;
-            color: #c3c5c2; }
+            color: #c3c5c2;
+            font-weight: bold; }
+        @media screen and (max-width: 468px) {
+          body .contact-section .contact__aside ul {
+            transform: scale(0.8); } }
       @media screen and (max-width: 1024px) {
         body .contact-section .contact__aside {
           transform: scale(0.8);
@@ -571,7 +586,12 @@ body {
           overflow: hidden; } }
       @media screen and (max-width: 468px) {
         body .contact-section .contact__aside {
-          overflow: hidden; } }
+          overflow: hidden;
+          position: absolute;
+          top: 65%;
+          right: 0;
+          min-width: 100%;
+          padding: 0; } }
     @media screen and (max-width: 810px) {
       body .contact-section {
         flex-direction: column;
